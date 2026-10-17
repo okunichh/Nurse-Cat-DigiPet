@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "My Pet",
+  "version": "1.0",
+  "description": "A nurse kitty - your browser pet.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["*.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
